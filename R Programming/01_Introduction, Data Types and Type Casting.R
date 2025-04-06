@@ -96,4 +96,3 @@ c <- as.numeric(y)
 print(c)  
 # Output: Warning message: "NAs introduced by coercion"  
 # Explanation: R cannot convert "King" into a numeric value, so it assigns 'NA' (Not Available).
-
