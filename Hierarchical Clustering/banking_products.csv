@@ -1,0 +1,42 @@
+Product_ID,Product_Name,Category,Interest_Rate,Annual_Fee,Min_Balance_Required,Avg_Customer_Age,Avg_Customer_Income,Revenue_Per_Customer_Annual,Customer_Count,Risk_Score,Avg_Tenure_Years
+P001,Basic Checking,Checking,0.05,0,0,34,45000,60,42000,1,4.5
+P002,Student Checking,Checking,0.05,0,0,20,12000,25,9500,1,2.0
+P003,Premium Checking,Checking,0.15,12,2500,46,110000,220,8500,1,7.5
+P004,Senior Checking,Checking,0.1,0,500,68,52000,90,11000,1,9.0
+P005,Business Checking,Checking,0.1,15,1500,43,95000,340,6200,2,6.0
+P006,Basic Savings,Savings,0.6,0,300,38,48000,45,39000,1,5.0
+P007,High-Yield Savings,Savings,4.25,0,1000,41,88000,130,14500,1,4.0
+P008,Youth Savings,Savings,0.75,0,25,12,0,10,7200,1,3.5
+P009,Holiday Club Savings,Savings,0.9,0,50,40,46000,15,5100,1,1.5
+P010,Basic Rewards Card,Credit Card,19.5,0,0,33,52000,210,18000,5,3.0
+P011,Cashback Card,Credit Card,20.5,0,0,36,58000,260,15500,5,3.5
+P012,Travel Rewards Card,Credit Card,21.5,95,0,39,82000,380,8200,5,4.0
+P013,Premium Travel Card,Credit Card,22.5,550,0,45,145000,620,2600,4,5.5
+P014,Student Credit Card,Credit Card,22.0,0,0,20,8000,95,6100,6,1.5
+P015,Secured Credit Card,Credit Card,24.5,35,300,29,24000,130,4400,7,2.0
+P016,Business Credit Card,Credit Card,20.0,125,0,44,98000,410,3100,5,3.5
+P017,Personal Loan - Unsecured,Personal Loan,14.5,0,0,37,55000,320,3400,7,3.0
+P018,Personal Loan - Secured,Personal Loan,9.5,0,0,41,62000,260,1900,5,3.0
+P019,Debt Consolidation Loan,Personal Loan,13.0,0,0,39,51000,300,2200,7,3.5
+P020,New Auto Loan,Auto Loan,6.0,0,0,36,68000,280,5200,4,5.0
+P021,Used Auto Loan,Auto Loan,7.5,0,0,33,51000,220,4600,5,4.0
+P022,Auto Refinance Loan,Auto Loan,6.5,0,0,40,64000,190,1800,4,3.0
+P023,30-Year Fixed Mortgage,Mortgage,6.5,350,0,40,105000,1600,9800,3,22.0
+P024,15-Year Fixed Mortgage,Mortgage,5.8,350,0,44,128000,1450,4200,3,13.0
+P025,ARM Mortgage,Mortgage,5.5,400,0,38,98000,1500,2100,4,8.0
+P026,Jumbo Mortgage,Mortgage,6.3,500,0,47,260000,2600,1400,3,18.0
+P027,FHA Mortgage,Mortgage,6.7,250,0,31,62000,1350,3600,4,15.0
+P028,Home Equity Loan,Mortgage,8.0,150,0,49,112000,700,2600,3,9.0
+P029,HELOC,Mortgage,8.5,75,0,48,118000,620,2900,3,8.5
+P030,CD 3-Month,CD,3.8,0,500,55,62000,35,3100,1,0.25
+P031,CD 6-Month,CD,4.1,0,500,56,63000,45,2800,1,0.5
+P032,CD 12-Month,CD,4.6,0,1000,58,68000,70,4200,1,1.0
+P033,CD 24-Month,CD,4.3,0,1000,59,70000,85,2600,1,2.0
+P034,CD 60-Month,CD,4.0,0,2500,62,78000,120,1900,1,5.0
+P035,IRA CD,CD,4.4,0,1000,57,82000,95,2200,1,4.0
+P036,Robo-Advisor Portfolio,Investment,6.5,0,500,34,78000,180,6100,6,3.5
+P037,Brokerage Account,Investment,7.0,0,0,42,118000,420,5400,6,6.0
+P038,Retirement IRA,Investment,6.8,0,0,45,95000,260,8900,4,12.0
+P039,529 College Savings,Investment,5.5,0,250,38,92000,90,3200,3,10.0
+P040,Life Insurance,Insurance,0.0,180,0,44,88000,340,6600,2,14.0
+P041,Auto Insurance,Insurance,0.0,0,0,39,65000,210,15200,3,3.0
