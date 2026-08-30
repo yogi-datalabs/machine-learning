@@ -54,12 +54,17 @@ Practical / data-prep topics:
     capping transaction-amount outliers destroys most of the fraud signal, feature engineering and
     correlation-based dimensionality thinning at scale, and why the resulting data-prep work barely
     moves a Gradient Boosting model but measurably improves Logistic Regression
+17. **ML Pipelines** — `ML Pipelines/` — reuses the `Decision Trees` case study's dataset and model
+    to show `make_pipeline` + `ColumnTransformer`/`OneHotEncoder` reproducing the exact same
+    results (100%/83.4% recall base tree, 75.6%/78.2% recall pre-pruned) as the manual
+    encode-then-tune approach, with `GridSearchCV` tuning the pipeline directly via
+    `step_name__parameter`, safer (no leakage risk) at no accuracy cost, with far less code
 
 Tying it together:
 
-17. **PyCaret** — `PyCaret/` — manual model-comparison loop vs. PyCaret's AutoML, verified to agree
+18. **PyCaret** — `PyCaret/` — manual model-comparison loop vs. PyCaret's AutoML, verified to agree
     on the same held-out test set (+ Teaching Notes). **Runs in its own virtual environment**, see below.
-18. **Model Explainability** — `Model Explainability/` — explaining the loan-default Gradient
+19. **Model Explainability** — `Model Explainability/` — explaining the loan-default Gradient
     Boosting model globally (importance, PDP/ICE, SHAP) and locally (LIME vs. SHAP for one
     applicant), with PDP cross-checked against ALE (+ Teaching Notes)
 
