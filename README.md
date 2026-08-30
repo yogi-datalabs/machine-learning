@@ -54,11 +54,12 @@ Practical / data-prep topics:
     capping transaction-amount outliers destroys most of the fraud signal, feature engineering and
     correlation-based dimensionality thinning at scale, and why the resulting data-prep work barely
     moves a Gradient Boosting model but measurably improves Logistic Regression
-17. **ML Pipelines** — `ML Pipelines/` — reuses the `Decision Trees` case study's dataset and model
-    to show `make_pipeline` + `ColumnTransformer`/`OneHotEncoder` reproducing the exact same
-    results (100%/83.4% recall base tree, 75.6%/78.2% recall pre-pruned) as the manual
-    encode-then-tune approach, with `GridSearchCV` tuning the pipeline directly via
-    `step_name__parameter`, safer (no leakage risk) at no accuracy cost, with far less code
+17. **ML Pipelines** — `ML Pipelines/` — reuses the `Decision Trees` case study's dataset (copied
+    into this folder) and model: build a Decision Tree the traditional way (manual encoding,
+    `GridSearchCV` tuning, select the best estimator), then only after that model is selected,
+    wrap its encoding step and hyperparameters into one `make_pipeline` object, verified to
+    reproduce the selected model's result exactly (75.6%/78.2% recall) — the pipeline is packaging
+    for reuse/deployment, not a substitute for the model-selection decision itself
 
 Tying it together:
 
