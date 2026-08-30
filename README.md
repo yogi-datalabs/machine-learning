@@ -55,10 +55,12 @@ Practical / data-prep topics:
     correlation-based dimensionality thinning at scale, and why the resulting data-prep work barely
     moves a Gradient Boosting model but measurably improves Logistic Regression
 17. **ML Pipelines** — `ML Pipelines/` — reuses the `Decision Trees` case study's dataset (copied
-    into this folder) and model: build a Decision Tree the traditional way (manual encoding,
-    `GridSearchCV` tuning, select the best estimator), then only after that model is selected,
-    wrap its encoding step and hyperparameters into one `make_pipeline` object, verified to
-    reproduce the selected model's result exactly (75.6%/78.2% recall) — the pipeline is packaging
+    into this folder, with missing values deliberately introduced into two numeric and two
+    categorical columns) and model: build a Decision Tree the traditional way (manual imputation,
+    encoding, `GridSearchCV` tuning, select the best estimator), then only after that model is
+    selected, wrap its imputation, encoding, and hyperparameters into one `make_pipeline` object
+    (`SimpleImputer` + `OneHotEncoder` per column type inside a `ColumnTransformer`), verified to
+    reproduce the selected model's result exactly (80.4%/81.6% recall) — the pipeline is packaging
     for reuse/deployment, not a substitute for the model-selection decision itself
 
 Tying it together:
