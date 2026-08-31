@@ -62,7 +62,7 @@ Practical / data-prep topics:
     no custom class needed), imputation, encoding, and hyperparameters into one `make_pipeline`
     object, verified to reproduce the selected model's result exactly (82.7%/84.1% recall) — the
     pipeline is packaging for reuse/deployment, not a substitute for the model-selection decision
-    itself
+    itself (+ Teaching Notes)
 
 Tying it together:
 
