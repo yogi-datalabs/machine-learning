@@ -58,10 +58,13 @@ Practical / data-prep topics:
     into this folder, with missing values deliberately introduced into two numeric and two
     categorical columns): split into train/validation/test first, impute only after splitting (to
     avoid leakage), build and `GridSearchCV`-tune a Decision Tree, then package the tuned model
-    into a `Pipeline` with a `ColumnTransformer` (median imputation for numeric columns,
-    most-frequent imputation + one-hot encoding for categorical columns). Reports an honest,
-    non-uniform result: tuning shrinks the train-validation recall gap (95.5%/90.4% base vs.
-    83.4%/80.1% tuned) but at a real recall cost, not a pure win
+    into a `Pipeline` with a per-column `ColumnTransformer`, fit and evaluated on the identical
+    train/test rows, verified to reproduce the selected model's test performance exactly (Accuracy
+    0.866, Recall 0.784, Precision 0.874, F1 0.827, to the last decimal) — matching the column
+    order and missing-category treatment to `pd.get_dummies` was what closed a small
+    tie-breaking-driven gap. Also reports an honest, non-uniform tuning result: `GridSearchCV`
+    shrinks the train-validation recall gap (95.5%/90.4% base vs. 83.4%/80.1% tuned) but at a real
+    recall cost, not a pure win
 
 Tying it together:
 
