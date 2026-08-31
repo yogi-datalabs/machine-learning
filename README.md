@@ -56,13 +56,12 @@ Practical / data-prep topics:
     moves a Gradient Boosting model but measurably improves Logistic Regression
 17. **ML Pipelines** — `ML Pipelines/` — reuses the `Decision Trees` case study's dataset (copied
     into this folder, with missing values deliberately introduced into two numeric and two
-    categorical columns) and model: build a Decision Tree the traditional way (a simple engineered
-    ratio feature, manual imputation, encoding, `GridSearchCV` tuning, select the best estimator),
-    then only after that model is selected, wrap the feature engineering (`FunctionTransformer`,
-    no custom class needed), imputation, encoding, and hyperparameters into one `make_pipeline`
-    object, verified to reproduce the selected model's result exactly (82.7%/84.1% recall) — the
-    pipeline is packaging for reuse/deployment, not a substitute for the model-selection decision
-    itself (+ Teaching Notes)
+    categorical columns): split into train/validation/test first, impute only after splitting (to
+    avoid leakage), build and `GridSearchCV`-tune a Decision Tree, then package the tuned model
+    into a `Pipeline` with a `ColumnTransformer` (median imputation for numeric columns,
+    most-frequent imputation + one-hot encoding for categorical columns). Reports an honest,
+    non-uniform result: tuning shrinks the train-validation recall gap (95.5%/90.4% base vs.
+    83.4%/80.1% tuned) but at a real recall cost, not a pure win
 
 Tying it together:
 
