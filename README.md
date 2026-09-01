@@ -64,7 +64,9 @@ Practical / data-prep topics:
     order and missing-category treatment to `pd.get_dummies` was what closed a small
     tie-breaking-driven gap. Also reports an honest, non-uniform tuning result: `GridSearchCV`
     shrinks the train-validation recall gap (95.5%/90.4% base vs. 83.4%/80.1% tuned) but at a real
-    recall cost, not a pure win
+    recall cost, not a pure win. Teaching material for this topic is a slide deck (`ML Pipelines
+    Teaching Deck.pptx`) rather than the usual Word doc, matching a Grid Search/Random
+    Search/Pipelines-style lecture format
 
 Tying it together:
 
