@@ -1,0 +1,25 @@
+Product_ID,Product_Name,Category,Min_Balance_Required,Annual_Fee,Interest_Rate_Pct,Risk_Level,Target_Income_Tier
+PROD_000,Personal Loan,Loan,0,0,11.5,Medium,Mid
+PROD_001,Auto Loan,Loan,0,0,7.2,Low,Mid
+PROD_002,Home Mortgage,Loan,0,0,6.5,Low,High
+PROD_003,Student Loan,Loan,0,0,5.8,Low,Low
+PROD_004,Small Business Loan,Loan,5000,0,9.0,Medium,High
+PROD_005,Rewards Credit Card,Card,0,95,19.9,Medium,Mid
+PROD_006,Cashback Credit Card,Card,0,0,21.9,Medium,Low
+PROD_007,Travel Credit Card,Card,0,250,18.5,Medium,High
+PROD_008,Secured Credit Card,Card,500,35,24.9,Low,Low
+PROD_009,Premium Credit Card,Card,0,550,17.9,High,High
+PROD_010,Basic Savings Account,Savings,0,0,0.5,Low,Low
+PROD_011,High-Yield Savings,Savings,1000,0,4.2,Low,Mid
+PROD_012,Certificate of Deposit (12mo),Savings,2500,0,4.5,Low,Mid
+PROD_013,Certificate of Deposit (5yr),Savings,5000,0,4.8,Low,High
+PROD_014,Money Market Account,Savings,2500,0,3.8,Low,High
+PROD_015,Term Life Insurance,Insurance,0,0,0.0,Medium,Mid
+PROD_016,Auto Insurance,Insurance,0,0,0.0,Medium,Low
+PROD_017,Homeowners Insurance,Insurance,0,0,0.0,Medium,High
+PROD_018,Health Insurance Supplement,Insurance,0,0,0.0,High,Mid
+PROD_019,Mutual Fund - Growth,Investment,1000,0,0.0,High,High
+PROD_020,Mutual Fund - Balanced,Investment,500,0,0.0,Medium,Mid
+PROD_021,Brokerage Account,Investment,0,0,0.0,High,High
+PROD_022,Retirement Account (IRA),Investment,0,0,0.0,Medium,Mid
+PROD_023,Robo-Advisor Portfolio,Investment,100,25,0.0,Medium,Low
